@@ -1,22 +1,6 @@
 module Blackjack
   class Window < Gosu::Window
- 
-=begin 
-    def initialize
-      super(640,480,false)
-  #    @player = Player.new(self)
-      @font = Gosu::Font.new self, Gosu::default_font_name, 20
-      @background = Gosu::Image.new self, 'blackjack/media/table.bmp', true
-      self.caption = 'Blackjack, powered by Gosu'
-    
-      @game_in_progress = false
-      @start_button = Gosu::Image.new self, 'blackjack/media/start.png', false
-      @hit_button   = Gosu::Image.new self, 'blackjack/media/hit.png', false
-      @stand_button = Gosu::Image.new self, 'blackjack/media/stand.png', false
-      @hidden_card  = Gosu::Image.new self, 'blackjack/media/cards/hidden.png', false 
-    end
-=end
-  
+   
     def initialize
       super 640, 480, false
       Blackjack.window = self
